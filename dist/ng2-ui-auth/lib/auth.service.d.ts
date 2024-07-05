@@ -3,6 +3,7 @@ import { LocalService } from './local.service';
 import { OauthService } from './oauth.service';
 import { SharedService } from './shared.service';
 import { StorageType } from './storage-type.enum';
+import * as i0 from "@angular/core";
 export declare class AuthService {
     private shared;
     private local;
@@ -21,4 +22,6 @@ export declare class AuthService {
     getPayload(): any;
     setStorageType(type: StorageType): boolean;
     getExpirationDate(): Date | null;
+    static ɵfac: i0.ɵɵFactoryDeclaration<AuthService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<AuthService>;
 }

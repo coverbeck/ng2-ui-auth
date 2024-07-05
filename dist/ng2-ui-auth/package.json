@@ -6,17 +6,27 @@
     "@angular/core": "^8.0.0",
     "rxjs": "^6.0.0"
   },
-  "main": "bundles/ng2-ui-auth.umd.js",
-  "module": "fesm5/ng2-ui-auth.js",
-  "es2015": "fesm2015/ng2-ui-auth.js",
-  "esm5": "esm5/ng2-ui-auth.js",
-  "esm2015": "esm2015/ng2-ui-auth.js",
-  "fesm5": "fesm5/ng2-ui-auth.js",
-  "fesm2015": "fesm2015/ng2-ui-auth.js",
-  "typings": "ng2-ui-auth.d.ts",
-  "metadata": "ng2-ui-auth.metadata.json",
+  "module": "fesm2015/ng2-ui-auth.mjs",
+  "es2020": "fesm2020/ng2-ui-auth.mjs",
+  "esm2020": "esm2020/ng2-ui-auth.mjs",
+  "fesm2020": "fesm2020/ng2-ui-auth.mjs",
+  "fesm2015": "fesm2015/ng2-ui-auth.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/ng2-ui-auth.mjs",
+      "es2020": "./fesm2020/ng2-ui-auth.mjs",
+      "es2015": "./fesm2015/ng2-ui-auth.mjs",
+      "node": "./fesm2015/ng2-ui-auth.mjs",
+      "default": "./fesm2020/ng2-ui-auth.mjs"
+    }
+  },
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^1.9.0"
+    "tslib": "^2.3.0"
   }
 }

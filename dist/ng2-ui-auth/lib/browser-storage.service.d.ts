@@ -1,6 +1,7 @@
 import { StorageService } from './storage-service';
 import { StorageType } from './storage-type.enum';
 import { ConfigService } from './config.service';
+import * as i0 from "@angular/core";
 export declare class BrowserStorageService extends StorageService {
     private config;
     private store;
@@ -16,4 +17,6 @@ export declare class BrowserStorageService extends StorageService {
     private setCookie;
     private removeCookie;
     private getCookie;
+    static ɵfac: i0.ɵɵFactoryDeclaration<BrowserStorageService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<BrowserStorageService>;
 }
